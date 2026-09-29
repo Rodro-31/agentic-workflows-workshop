@@ -20,7 +20,7 @@ permissions:
 # Tools - GitHub API access via toolsets (context, repos, issues, pull_requests)
 tools:
   github:
-    toolsets: [default]
+    toolsets: [issues, pull_requests]
 
 # Network access
 network: defaults
@@ -118,12 +118,9 @@ safe-outputs:
 
 # Daily Digest
 
-## Instructions
+Create a GitHub issue that summarises all open issues and pull requests in this repository.
 
-Create one GitHub issue summarizing every currently open issue and pull request in this repository.
-
-1. Retrieve all open issues and all open pull requests in this repository. Paginate through every result page; do not summarize only the first page. Exclude pull requests returned by the issues endpoint so each item is counted once.
-2. Group items by their labels. List an item under each label it has; put items with no labels in an `Unlabeled` group. If an item appears in multiple groups, count it only once in the total.
-3. For each item, include its number and link, exact title, author, and age since it was opened. Calculate age from its creation time to the current time in UTC and state it in days (include remaining hours when useful).
-4. Start the digest with the total number of unique open issues and pull requests. If there are none, report a total of zero and say that no items are open.
-5. Create exactly one issue using the `create-issue` safe output. Set its title to `Daily Digest – YYYY-MM-DD`, using the current date in UTC, and put the grouped summary in its body. Create the issue even when the total is zero.
+- Group them by label.
+- Include the total count, and for each item: the title, the author, and how long it has been open.
+- Title the issue "Daily Digest - <today's date>".
+- If there are no open issues or pull requests, say so in the issue.
