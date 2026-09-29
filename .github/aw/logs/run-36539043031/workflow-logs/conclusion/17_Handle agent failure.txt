@@ -1,0 +1,123 @@
+﻿2026-09-29T07:51:21.2774791Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-29T07:51:21.2776430Z with:
+2026-09-29T07:51:21.2785985Z   github-token: ***
+2026-09-29T07:51:21.2794738Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_agent_failure.cjs'));
+await main();
+
+2026-09-29T07:51:21.2800188Z   debug: false
+2026-09-29T07:51:21.2802518Z   user-agent: actions/github-script
+2026-09-29T07:51:21.2803508Z   result-encoding: json
+2026-09-29T07:51:21.2807132Z   retries: 0
+2026-09-29T07:51:21.2807994Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-29T07:51:21.2810611Z env:
+2026-09-29T07:51:21.2811392Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-29T07:51:21.2813849Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-29T07:51:21.2818507Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Daily%20Digest,gh-aw.repository=Rodro-31/agentic-workflows-workshop,gh-aw.run.id=36539043031,github.run_id=36539043031,gh-aw.engine.id=copilot
+2026-09-29T07:51:21.2823253Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-29T07:51:21.2824351Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-29T07:51:21.2827154Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-29T07:51:21.2828165Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-29T07:51:21.2830862Z   GITHUB_AW_OTEL_TRACE_ID: c2b9da25dcee326cb2caf540f370cd71
+2026-09-29T07:51:21.2832122Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fa9c6e6ed964749
+2026-09-29T07:51:21.2834780Z   GITHUB_AW_OTEL_JOB_START_MS: 1790668273550
+2026-09-29T07:51:21.2835788Z   GH_AW_AGENT_OUTPUT: 
+2026-09-29T07:51:21.2838875Z   GH_AW_WORKFLOW_NAME: Daily Digest
+2026-09-29T07:51:21.2842007Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Rodro-31/agentic-workflows-workshop/blob/main/.github/workflows/daily-digest.md
+2026-09-29T07:51:21.2845747Z   GH_AW_RUN_URL: https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031
+2026-09-29T07:51:21.2847484Z   GH_AW_AGENT_CONCLUSION: skipped
+2026-09-29T07:51:21.2849995Z   GH_AW_WORKFLOW_ID: daily-digest
+2026-09-29T07:51:21.2851004Z   GH_AW_ACTION_FAILURE_ISSUE_EXPIRES_HOURS: 0
+2026-09-29T07:51:21.2852966Z   GH_AW_ENGINE_ID: copilot
+2026-09-29T07:51:21.2854388Z   GH_AW_SECRET_VERIFICATION_RESULT: failed
+2026-09-29T07:51:21.2861999Z   GH_AW_ENGINE_SECRET_FAILURE_MESSAGE: **Alternative**: If your organization has a Copilot subscription, you can avoid the need for a personal access token by adding a top-level `permissions` block to your workflow file. This enables Copilot inference through the org using the built-in GitHub Actions token.
+
+```yaml
+permissions:
+  copilot-requests: write
+```
+
+See: https://github.github.com/gh-aw/reference/engines/#github-copilot-default
+2026-09-29T07:51:21.2871098Z   GH_AW_CHECKOUT_PR_SUCCESS: 
+2026-09-29T07:51:21.2872053Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-09-29T07:51:21.2874764Z   GH_AW_AI_CREDITS_RATE_LIMIT_ERROR: false
+2026-09-29T07:51:21.2875820Z   GH_AW_UNKNOWN_MODEL_AI_CREDITS: false
+2026-09-29T07:51:21.2878532Z   GH_AW_AIC: 
+2026-09-29T07:51:21.2879339Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-09-29T07:51:21.2880220Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-09-29T07:51:21.2881096Z   GH_AW_INFERENCE_ACCESS_ERROR: 
+2026-09-29T07:51:21.2881992Z   GH_AW_MCP_POLICY_ERROR: 
+2026-09-29T07:51:21.2882837Z   GH_AW_AGENTIC_ENGINE_TIMEOUT: 
+2026-09-29T07:51:21.2883750Z   GH_AW_MODEL_NOT_SUPPORTED_ERROR: 
+2026-09-29T07:51:21.2884687Z   GH_AW_HTTP_400_RESPONSE_ERROR: 
+2026-09-29T07:51:21.2885599Z   GH_AW_MAX_CACHE_MISSES_EXCEEDED: 
+2026-09-29T07:51:21.2886729Z   GH_AW_MISSING_MODEL_PRICING_ERROR: 
+2026-09-29T07:51:21.2887710Z   GH_AW_MISSING_MODEL_PRICING_MODEL_NAME: 
+2026-09-29T07:51:21.2888689Z   GH_AW_SHELL_EXPANSION_GUARD_REJECTED: 
+2026-09-29T07:51:21.2890556Z   GH_AW_ENGINE_API_HOSTS: api.enterprise.githubcopilot.com,api.githubcopilot.com,api.business.githubcopilot.com,api.individual.githubcopilot.com
+2026-09-29T07:51:21.2894078Z   GH_AW_LOCKDOWN_CHECK_FAILED: false
+2026-09-29T07:51:21.2895131Z   GH_AW_OAUTH_TOKEN_CHECK_FAILED: false
+2026-09-29T07:51:21.2896284Z   GH_AW_STALE_LOCK_FILE_FAILED: false
+2026-09-29T07:51:21.2897236Z   GH_AW_DAILY_AI_CREDITS_EXCEEDED: false
+2026-09-29T07:51:21.2898501Z   GH_AW_DAILY_AI_CREDITS_TOTAL_EFFECTIVE_TOKENS: 
+2026-09-29T07:51:21.2899529Z   GH_AW_DAILY_AI_CREDITS_THRESHOLD: 
+2026-09-29T07:51:21.2900456Z   GH_AW_GROUP_REPORTS: false
+2026-09-29T07:51:21.2901349Z   GH_AW_FAILURE_REPORT_AS_ISSUE: true
+2026-09-29T07:51:21.2902325Z   GH_AW_MISSING_TOOL_REPORT_AS_FAILURE: true
+2026-09-29T07:51:21.2903329Z   GH_AW_MISSING_DATA_REPORT_AS_FAILURE: true
+2026-09-29T07:51:21.2905005Z   GH_AW_TIMEOUT_MINUTES: 20
+2026-09-29T07:51:21.2907059Z ##[endgroup]
+2026-09-29T07:51:21.5141736Z [ai-credits] aiCredits source=none GH_AW_AIC=(unset)
+2026-09-29T07:51:21.5149458Z [ai-credits] maxAICredits source=env(GH_AW_MAX_AI_CREDITS) value=1000
+2026-09-29T07:51:21.5153940Z [ai-credits] rateLimitSignal source=none
+2026-09-29T07:51:21.5167298Z Agent conclusion: skipped
+2026-09-29T07:51:21.5174065Z Workflow name: Daily Digest
+2026-09-29T07:51:21.5178384Z Workflow ID: daily-digest
+2026-09-29T07:51:21.5182306Z Secret verification result: failed
+2026-09-29T07:51:21.5186546Z Engine secret failure message: (set)
+2026-09-29T07:51:21.5190883Z Assignment error count: 0
+2026-09-29T07:51:21.5195641Z Assign copilot failure count: 0
+2026-09-29T07:51:21.5198911Z Skill install failure count: 0
+2026-09-29T07:51:21.5200985Z Create discussion error count: 0
+2026-09-29T07:51:21.5203731Z Code push failure count: 0
+2026-09-29T07:51:21.5207159Z Checkout PR success: 
+2026-09-29T07:51:21.5208928Z AI credits: (none)
+2026-09-29T07:51:21.5211220Z Configured max AI credits: 1000
+2026-09-29T07:51:21.5213147Z AI credits rate-limit error: false
+2026-09-29T07:51:21.5216503Z Max AI credits exceeded (harness budget abort): false
+2026-09-29T07:51:21.5218681Z Daily workflow AIC guardrail exceeded: false
+2026-09-29T07:51:21.5220519Z Inference access error: false
+2026-09-29T07:51:21.5222229Z MCP policy error: false
+2026-09-29T07:51:21.5223870Z Agentic engine timeout: false
+2026-09-29T07:51:21.5239812Z Model not supported error: false
+2026-09-29T07:51:21.5240837Z HTTP 400 response error: false
+2026-09-29T07:51:21.5241756Z Unknown model AI credits error: false
+2026-09-29T07:51:21.5242863Z Unknown model AI credits sources (audit/output): false/false
+2026-09-29T07:51:21.5244065Z Missing model pricing error: false (model: (unknown))
+2026-09-29T07:51:21.5245143Z Shell expansion guard rejected: false
+2026-09-29T07:51:21.5246345Z Push repo-memory result: 
+2026-09-29T07:51:21.5247527Z App token minting failed (safe_outputs/conclusion/activation): false/false/false
+2026-09-29T07:51:21.5248817Z Lockdown check failed: false
+2026-09-29T07:51:21.5249694Z OAuth token check failed: false
+2026-09-29T07:51:21.5250583Z Stale lock file check failed: false
+2026-09-29T07:51:21.5251505Z Cache memory enabled: false
+2026-09-29T07:51:21.5252445Z Cache memory restored (from restore outputs): false
+2026-09-29T07:51:21.5253487Z Missing tool report-as-failure: true
+2026-09-29T07:51:21.5254422Z Missing data report-as-failure: true
+2026-09-29T07:51:21.5255401Z No GH_AW_AGENT_OUTPUT environment variable found
+2026-09-29T07:51:21.5438531Z Searching for pull request from branch: main
+2026-09-29T07:51:23.4747013Z No pull request found for branch: main
+2026-09-29T07:51:23.4769014Z Parent issue creation is disabled (group-reports: false)
+2026-09-29T07:51:23.4770136Z Checking for existing issue with precise failure metadata for title: "[aw] Daily Digest failed"
+2026-09-29T07:51:23.4772475Z No existing issue found, creating a new one
+2026-09-29T07:51:23.5721770Z No GH_AW_AGENT_OUTPUT environment variable found
+2026-09-29T07:51:23.5722668Z No GH_AW_AGENT_OUTPUT environment variable found
+2026-09-29T07:51:23.5723438Z No GH_AW_AGENT_OUTPUT environment variable found
+2026-09-29T07:51:23.5724223Z No GH_AW_AGENT_OUTPUT environment variable found
+2026-09-29T07:51:23.5761510Z Generating failure issue footer with aiCredits context: (none)
+2026-09-29T07:51:23.8453889Z [@octokit/request] "POST https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/issues" is deprecated. It is scheduled to be removed on Fri, 10 Mar 2028 00:00:00 GMT. See https://docs.github.com/en/rest/about-the-rest-api/api-versions
+2026-09-29T07:51:23.8477249Z POST /repos/Rodro-31/agentic-workflows-workshop/issues - 410 with id 1228:D94CB:B1B99:256684:6ABB6DFB in 270ms
+2026-09-29T07:51:23.8492531Z ##[warning]Failed to create or update failure tracking issue: Issues has been disabled in this repository. - https://docs.github.com/rest/issues/issues#create-an-issue

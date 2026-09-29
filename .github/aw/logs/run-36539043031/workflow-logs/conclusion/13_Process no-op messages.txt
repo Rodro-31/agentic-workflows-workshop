@@ -1,0 +1,40 @@
+﻿2026-09-29T07:51:20.3367806Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-29T07:51:20.3370766Z with:
+2026-09-29T07:51:20.3379547Z   github-token: ***
+2026-09-29T07:51:20.3384541Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_noop_message.cjs'));
+await main();
+
+2026-09-29T07:51:20.3392145Z   debug: false
+2026-09-29T07:51:20.3394190Z   user-agent: actions/github-script
+2026-09-29T07:51:20.3395183Z   result-encoding: json
+2026-09-29T07:51:20.3397751Z   retries: 0
+2026-09-29T07:51:20.3398716Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-29T07:51:20.3399867Z env:
+2026-09-29T07:51:20.3400684Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-29T07:51:20.3403185Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-29T07:51:20.3407337Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Daily%20Digest,gh-aw.repository=Rodro-31/agentic-workflows-workshop,gh-aw.run.id=36539043031,github.run_id=36539043031,gh-aw.engine.id=copilot
+2026-09-29T07:51:20.3411375Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-29T07:51:20.3412416Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-29T07:51:20.3415016Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-29T07:51:20.3415972Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-29T07:51:20.3417208Z   GITHUB_AW_OTEL_TRACE_ID: c2b9da25dcee326cb2caf540f370cd71
+2026-09-29T07:51:20.3420028Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fa9c6e6ed964749
+2026-09-29T07:51:20.3421283Z   GITHUB_AW_OTEL_JOB_START_MS: 1790668273550
+2026-09-29T07:51:20.3422279Z   GH_AW_AGENT_OUTPUT: 
+2026-09-29T07:51:20.3424608Z   GH_AW_NOOP_MAX: 1
+2026-09-29T07:51:20.3425451Z   GH_AW_WORKFLOW_NAME: Daily Digest
+2026-09-29T07:51:20.3428855Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Rodro-31/agentic-workflows-workshop/blob/main/.github/workflows/daily-digest.md
+2026-09-29T07:51:20.3432093Z   GH_AW_RUN_URL: https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031
+2026-09-29T07:51:20.3437544Z   GH_AW_AGENT_CONCLUSION: skipped
+2026-09-29T07:51:20.3438588Z   GH_AW_NOOP_REPORT_AS_ISSUE: false
+2026-09-29T07:51:20.3439512Z   GH_AW_AIC: 
+2026-09-29T07:51:20.3440282Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-09-29T07:51:20.3442977Z   GH_AW_AMBIENT_CONTEXT: 
+2026-09-29T07:51:20.3443992Z   GH_AW_WORKFLOW_ID: daily-digest
+2026-09-29T07:51:20.3444918Z ##[endgroup]
+2026-09-29T07:51:20.5623404Z No GH_AW_AGENT_OUTPUT environment variable found
+2026-09-29T07:51:20.5624544Z Could not load agent output, skipping

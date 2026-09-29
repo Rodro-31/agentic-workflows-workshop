@@ -1,0 +1,38 @@
+﻿2026-09-29T07:51:23.8780254Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-29T07:51:23.8781566Z with:
+2026-09-29T07:51:23.8790283Z   github-token: ***
+2026-09-29T07:51:23.8793906Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'report_failed_jobs.cjs'));
+await main();
+
+2026-09-29T07:51:23.8797967Z   debug: false
+2026-09-29T07:51:23.8798507Z   user-agent: actions/github-script
+2026-09-29T07:51:23.8799188Z   result-encoding: json
+2026-09-29T07:51:23.8799732Z   retries: 0
+2026-09-29T07:51:23.8800405Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-29T07:51:23.8801169Z env:
+2026-09-29T07:51:23.8814817Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-29T07:51:23.8816813Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-29T07:51:23.8819250Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Daily%20Digest,gh-aw.repository=Rodro-31/agentic-workflows-workshop,gh-aw.run.id=36539043031,github.run_id=36539043031,gh-aw.engine.id=copilot
+2026-09-29T07:51:23.8821722Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-29T07:51:23.8822477Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-29T07:51:23.8823271Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-29T07:51:23.8823937Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-29T07:51:23.8824722Z   GITHUB_AW_OTEL_TRACE_ID: c2b9da25dcee326cb2caf540f370cd71
+2026-09-29T07:51:23.8825726Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fa9c6e6ed964749
+2026-09-29T07:51:23.8826794Z   GITHUB_AW_OTEL_JOB_START_MS: 1790668273550
+2026-09-29T07:51:23.8827545Z   GH_AW_AGENT_OUTPUT: 
+2026-09-29T07:51:23.8828138Z   GH_AW_WORKFLOW_NAME: Daily Digest
+2026-09-29T07:51:23.8829789Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Rodro-31/agentic-workflows-workshop/blob/main/.github/workflows/daily-digest.md
+2026-09-29T07:51:23.8832038Z   GH_AW_RUN_URL: https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031
+2026-09-29T07:51:23.8833485Z   GH_AW_REPORT_FAILED_JOBS: true
+2026-09-29T07:51:23.8834130Z ##[endgroup]
+2026-09-29T07:51:24.0199852Z Checking GitHub API rate limit before querying jobs
+2026-09-29T07:51:24.3794106Z Querying jobs for workflow run 36539043031
+2026-09-29T07:51:24.6594506Z Page 1: retrieved 5 jobs
+2026-09-29T07:51:24.6599877Z Skipping builtin job: activation (already reported by agent failure handler)
+2026-09-29T07:51:24.6602673Z Checking GitHub API rate limit after querying jobs
+2026-09-29T07:51:24.8468475Z No failed non-builtin jobs found, skipping issue creation

@@ -1,0 +1,31 @@
+﻿2026-09-29T07:50:48.2433376Z ##[group]Run github/gh-aw-actions/setup@5e508589e03a7757a7e05b26e834292f5445bfb6
+2026-09-29T07:50:48.2434578Z with:
+2026-09-29T07:50:48.2435094Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-09-29T07:50:48.2435713Z   job-name: activation
+2026-09-29T07:50:48.2436205Z   safe-output-artifact-client: true
+2026-09-29T07:50:48.2436876Z env:
+2026-09-29T07:50:48.2437293Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-29T07:50:48.2437827Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-29T07:50:48.2439623Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Daily%20Digest,gh-aw.repository=Rodro-31/agentic-workflows-workshop,gh-aw.run.id=36539043031,github.run_id=36539043031,gh-aw.engine.id=copilot
+2026-09-29T07:50:48.2441014Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-29T07:50:48.2441557Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-29T07:50:48.2442178Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-29T07:50:48.2442686Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-29T07:50:48.2443198Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-29T07:50:48.2443727Z   GH_AW_SETUP_WORKFLOW_NAME: Daily Digest
+2026-09-29T07:50:48.2444743Z   GH_AW_CURRENT_WORKFLOW_REF: Rodro-31/agentic-workflows-workshop/.github/workflows/daily-digest.lock.yml@refs/heads/main
+2026-09-29T07:50:48.2445742Z   GH_AW_INFO_VERSION: 1.0.80
+2026-09-29T07:50:48.2446240Z   GH_AW_INFO_AWF_VERSION: v0.28.14
+2026-09-29T07:50:48.2446761Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-09-29T07:50:48.2447239Z ##[endgroup]
+2026-09-29T07:50:54.6050155Z Successfully copied 509 files to /home/runner/work/_temp/gh-aw/actions
+2026-09-29T07:50:55.1651875Z Successfully copied 26 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-09-29T07:50:55.4495521Z Successfully copied 88 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-09-29T07:50:55.6392677Z [info] [otlp] INPUT_TRACE_ID not set, a new trace ID will be generated
+2026-09-29T07:50:55.6406955Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-09-29T07:50:55.6494607Z [info] [otlp] resolved trace-id=c2b9da25dcee326cb2caf540f370cd71
+2026-09-29T07:50:55.6505107Z [info] [otlp] trace-id=c2b9da25dcee326cb2caf540f370cd71 written to GITHUB_OUTPUT
+2026-09-29T07:50:55.6514662Z [info] [otlp] span-id=b6f4a0e6143575ee written to GITHUB_OUTPUT
+2026-09-29T07:50:55.6521307Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-09-29T07:50:55.6526866Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-09-29T07:50:55.6534680Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV

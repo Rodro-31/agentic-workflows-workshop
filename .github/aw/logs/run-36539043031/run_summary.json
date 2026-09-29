@@ -1,0 +1,607 @@
+{
+  "cli_version": "v0.88.7",
+  "run_id": 36539043031,
+  "processed_at": "2026-09-29T01:53:36.40994-06:00",
+  "run": {
+    "databaseId": 36539043031,
+    "number": 1,
+    "url": "https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflowName": "Daily Digest",
+    "workflowPath": ".github/workflows/daily-digest.lock.yml",
+    "createdAt": "2026-09-29T07:50:33Z",
+    "startedAt": "2026-09-29T07:50:33Z",
+    "updatedAt": "2026-09-29T07:51:28Z",
+    "event": "workflow_dispatch",
+    "headBranch": "main",
+    "headSha": "384fea7064a6f61c6723073b03d1627431201671",
+    "displayTitle": "Daily Digest",
+    "attempt": 1,
+    "repository": "Rodro-31/agentic-workflows-workshop",
+    "actor": "Rodro-31",
+    "Duration": 55000000000,
+    "ActionMinutes": 0,
+    "TokenUsage": 0,
+    "Turns": 0,
+    "TurnsAvailable": false,
+    "ErrorCount": 1,
+    "WarningCount": 0,
+    "MissingToolCount": 0,
+    "MissingDataCount": 0,
+    "NoopCount": 0,
+    "EffectiveTokens": 0,
+    "AvgTimeBetweenTurns": 0,
+    "LogsPath": "C:\\Users\\rodro\\OneDrive\\Desktop\\Homework\\DESARROLLO WEB\\Agentic Workflows - Copilot Github\\agentic-workflows-workshop\\.github\\aw\\logs\\run-36539043031"
+  },
+  "metrics": {
+    "TokenUsage": 0,
+    "EstimatedCost": 0,
+    "Turns": 0,
+    "ToolCalls": null,
+    "ToolSequences": null,
+    "AvgTimeBetweenTurns": 0,
+    "MaxTimeBetweenTurns": 0,
+    "MedianTimeBetweenTurns": 0,
+    "StdDevTimeBetweenTurns": 0
+  },
+  "task_domain": {
+    "name": "code_fix",
+    "label": "Code Fix",
+    "reason": "The workflow appears oriented toward code changes or pull request review."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "directed",
+    "tool_breadth": "narrow",
+    "actuation_style": "read_only",
+    "resource_profile": "lean",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0
+  },
+  "access_analysis": null,
+  "firewall_analysis": null,
+  "redacted_domains_analysis": null,
+  "missing_tools": null,
+  "missing_data": null,
+  "noops": null,
+  "mcp_failures": null,
+  "working_set": {
+    "measurement_state": "unavailable",
+    "cumulative_input_tokens": 0,
+    "peak_input_tokens": 0,
+    "rebuild_excess_tokens": 0,
+    "invocations": 0
+  },
+  "github_rate_limit_usage": {
+    "total_requests_made": 2,
+    "core_consumed": 1,
+    "core_consumed_source": "response_headers_delta",
+    "core_remaining": 4997,
+    "core_limit": 5000,
+    "resources": [
+      {
+        "resource": "core",
+        "requests_made": 2,
+        "quota_consumed": 1,
+        "final_remaining": 4997,
+        "limit": 5000
+      }
+    ]
+  },
+  "job_details": [
+    {
+      "id": 109309806509,
+      "run_id": 36539043031,
+      "run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUyAqac8AAAAZc19HrQ",
+      "head_sha": "384fea7064a6f61c6723073b03d1627431201671",
+      "url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/jobs/109309806509",
+      "html_url": "https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031/job/109309806509",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-09-29T07:50:35Z",
+      "started_at": "2026-09-29T07:50:40Z",
+      "completed_at": "2026-09-29T07:51:02Z",
+      "name": "activation",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-29T07:50:43Z",
+          "completed_at": "2026-09-29T07:50:48Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-29T07:50:48Z",
+          "completed_at": "2026-09-29T07:50:55Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-29T07:50:55Z",
+          "completed_at": "2026-09-29T07:50:55Z"
+        },
+        {
+          "name": "Generate agentic run info",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-29T07:50:55Z",
+          "completed_at": "2026-09-29T07:50:56Z"
+        },
+        {
+          "name": "Restore daily AIC usage cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-29T07:50:56Z",
+          "completed_at": "2026-09-29T07:50:57Z"
+        },
+        {
+          "name": "Restore daily AIC usage cache (artifact fallback)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-29T07:50:57Z",
+          "completed_at": "2026-09-29T07:50:58Z"
+        },
+        {
+          "name": "Check daily workflow token guardrail",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-29T07:50:58Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Validate COPILOT_GITHUB_TOKEN secret",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 8,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Check for OAuth tokens",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Save agent config folders for base branch restoration",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 11,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Check workflow lock file",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 12,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Check compile-agentic version",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Log runtime features",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 14,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Create prompt with built-in context",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 15,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Interpolate variables and render templates",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 16,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Substitute placeholders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 17,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Validate prompt placeholders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 18,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Print prompt",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Stage prompt files for artifact upload",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 20,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:50:59Z"
+        },
+        {
+          "name": "Upload activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-09-29T07:50:59Z",
+          "completed_at": "2026-09-29T07:51:00Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 42,
+          "started_at": "2026-09-29T07:51:00Z",
+          "completed_at": "2026-09-29T07:51:00Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 43,
+          "started_at": "2026-09-29T07:51:00Z",
+          "completed_at": "2026-09-29T07:51:00Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/check-runs/109309806509",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1000000137,
+      "runner_name": "GitHub Actions 1000000137",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Daily Digest",
+      "head_branch": "main",
+      "Duration": 22000000000
+    },
+    {
+      "id": 109309956256,
+      "run_id": 36539043031,
+      "run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUyAqac8AAAAZc2GQoA",
+      "head_sha": "384fea7064a6f61c6723073b03d1627431201671",
+      "url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/jobs/109309956256",
+      "html_url": "https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031/job/109309956256",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-29T07:51:03Z",
+      "started_at": "2026-09-29T07:51:06Z",
+      "completed_at": "2026-09-29T07:51:27Z",
+      "name": "conclusion",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-29T07:51:07Z",
+          "completed_at": "2026-09-29T07:51:11Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-29T07:51:11Z",
+          "completed_at": "2026-09-29T07:51:13Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-29T07:51:13Z",
+          "completed_at": "2026-09-29T07:51:14Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-29T07:51:14Z",
+          "completed_at": "2026-09-29T07:51:14Z"
+        },
+        {
+          "name": "Download detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-29T07:51:14Z",
+          "completed_at": "2026-09-29T07:51:15Z"
+        },
+        {
+          "name": "Download Safe Outputs Items Manifest",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-29T07:51:15Z",
+          "completed_at": "2026-09-29T07:51:15Z"
+        },
+        {
+          "name": "Collect usage artifact files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-29T07:51:15Z",
+          "completed_at": "2026-09-29T07:51:15Z"
+        },
+        {
+          "name": "Upload usage artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-29T07:51:15Z",
+          "completed_at": "2026-09-29T07:51:17Z"
+        },
+        {
+          "name": "Restore daily AIC usage cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-29T07:51:17Z",
+          "completed_at": "2026-09-29T07:51:17Z"
+        },
+        {
+          "name": "Write daily AIC usage cache entry",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-29T07:51:17Z",
+          "completed_at": "2026-09-29T07:51:17Z"
+        },
+        {
+          "name": "Save daily AIC usage cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-29T07:51:17Z",
+          "completed_at": "2026-09-29T07:51:18Z"
+        },
+        {
+          "name": "Upload daily AIC usage cache artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-29T07:51:18Z",
+          "completed_at": "2026-09-29T07:51:20Z"
+        },
+        {
+          "name": "Process no-op messages",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-29T07:51:20Z",
+          "completed_at": "2026-09-29T07:51:20Z"
+        },
+        {
+          "name": "Log detection run",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-29T07:51:20Z",
+          "completed_at": "2026-09-29T07:51:20Z"
+        },
+        {
+          "name": "Record missing tool",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-29T07:51:20Z",
+          "completed_at": "2026-09-29T07:51:21Z"
+        },
+        {
+          "name": "Record incomplete",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-29T07:51:21Z",
+          "completed_at": "2026-09-29T07:51:21Z"
+        },
+        {
+          "name": "Handle agent failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-09-29T07:51:21Z",
+          "completed_at": "2026-09-29T07:51:23Z"
+        },
+        {
+          "name": "Report failed jobs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-09-29T07:51:23Z",
+          "completed_at": "2026-09-29T07:51:24Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 36,
+          "started_at": "2026-09-29T07:51:24Z",
+          "completed_at": "2026-09-29T07:51:24Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 37,
+          "started_at": "2026-09-29T07:51:24Z",
+          "completed_at": "2026-09-29T07:51:24Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/check-runs/109309956256",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1000000138,
+      "runner_name": "GitHub Actions 1000000138",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Daily Digest",
+      "head_branch": "main",
+      "Duration": 21000000000
+    },
+    {
+      "id": 109309956302,
+      "run_id": 36539043031,
+      "run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUyAqac8AAAAZc2GQzg",
+      "head_sha": "384fea7064a6f61c6723073b03d1627431201671",
+      "url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/jobs/109309956302",
+      "html_url": "https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031/job/109309956302",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-09-29T07:51:03Z",
+      "started_at": "2026-09-29T07:51:03Z",
+      "completed_at": "2026-09-29T07:51:03Z",
+      "name": "agent",
+      "check_run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/check-runs/109309956302",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "workflow_name": "Daily Digest",
+      "head_branch": "main",
+      "Duration": 0
+    },
+    {
+      "id": 109309956346,
+      "run_id": 36539043031,
+      "run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUyAqac8AAAAZc2GQ-g",
+      "head_sha": "384fea7064a6f61c6723073b03d1627431201671",
+      "url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/jobs/109309956346",
+      "html_url": "https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031/job/109309956346",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-09-29T07:51:03Z",
+      "started_at": "2026-09-29T07:51:03Z",
+      "completed_at": "2026-09-29T07:51:03Z",
+      "name": "detection",
+      "check_run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/check-runs/109309956346",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "workflow_name": "Daily Digest",
+      "head_branch": "main",
+      "Duration": 0
+    },
+    {
+      "id": 109309957048,
+      "run_id": 36539043031,
+      "run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUyAqac8AAAAZc2GTuA",
+      "head_sha": "384fea7064a6f61c6723073b03d1627431201671",
+      "url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/actions/jobs/109309957048",
+      "html_url": "https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031/job/109309957048",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-09-29T07:51:03Z",
+      "started_at": "2026-09-29T07:51:03Z",
+      "completed_at": "2026-09-29T07:51:03Z",
+      "name": "safe_outputs",
+      "check_run_url": "https://api.github.com/repos/Rodro-31/agentic-workflows-workshop/check-runs/109309957048",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "workflow_name": "Daily Digest",
+      "head_branch": "main",
+      "Duration": 0
+    }
+  ],
+  "artifacts_list": [
+    ".downloaded-artifacts\\all",
+    "agentic-workflow-usage-cache.jsonl",
+    "aw_info.json",
+    "github_rate_limits.jsonl",
+    "models.json",
+    "usage\\activity\\summary.json",
+    "usage\\agent\\token_usage.jsonl",
+    "usage\\detection\\token_usage.jsonl",
+    "workflow-logs\\0_conclusion.txt",
+    "workflow-logs\\4_activation.txt",
+    "workflow-logs\\activation\\1_Set up job.txt",
+    "workflow-logs\\activation\\21_Upload activation artifact.txt",
+    "workflow-logs\\activation\\2_Setup Scripts.txt",
+    "workflow-logs\\activation\\3_Mask OTLP telemetry headers.txt",
+    "workflow-logs\\activation\\42_Post Setup Scripts.txt",
+    "workflow-logs\\activation\\43_Complete job.txt",
+    "workflow-logs\\activation\\4_Generate agentic run info.txt",
+    "workflow-logs\\activation\\5_Restore daily AIC usage cache.txt",
+    "workflow-logs\\activation\\6_Restore daily AIC usage cache (artifact fallback).txt",
+    "workflow-logs\\activation\\7_Check daily workflow token guardrail.txt",
+    "workflow-logs\\activation\\8_Validate COPILOT_GITHUB_TOKEN secret.txt",
+    "workflow-logs\\activation\\system.txt",
+    "workflow-logs\\conclusion\\10_Write daily AIC usage cache entry.txt",
+    "workflow-logs\\conclusion\\11_Save daily AIC usage cache.txt",
+    "workflow-logs\\conclusion\\12_Upload daily AIC usage cache artifact.txt",
+    "workflow-logs\\conclusion\\13_Process no-op messages.txt",
+    "workflow-logs\\conclusion\\14_Log detection run.txt",
+    "workflow-logs\\conclusion\\15_Record missing tool.txt",
+    "workflow-logs\\conclusion\\16_Record incomplete.txt",
+    "workflow-logs\\conclusion\\17_Handle agent failure.txt",
+    "workflow-logs\\conclusion\\18_Report failed jobs.txt",
+    "workflow-logs\\conclusion\\1_Set up job.txt",
+    "workflow-logs\\conclusion\\2_Setup Scripts.txt",
+    "workflow-logs\\conclusion\\36_Post Setup Scripts.txt",
+    "workflow-logs\\conclusion\\37_Complete job.txt",
+    "workflow-logs\\conclusion\\3_Download agent output artifact.txt",
+    "workflow-logs\\conclusion\\4_Setup agent output environment variable.txt",
+    "workflow-logs\\conclusion\\5_Download detection artifact.txt",
+    "workflow-logs\\conclusion\\6_Download Safe Outputs Items Manifest.txt",
+    "workflow-logs\\conclusion\\7_Collect usage artifact files.txt",
+    "workflow-logs\\conclusion\\8_Upload usage artifact.txt",
+    "workflow-logs\\conclusion\\9_Restore daily AIC usage cache.txt",
+    "workflow-logs\\conclusion\\system.txt"
+  ]
+}

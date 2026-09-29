@@ -1,0 +1,32 @@
+﻿2026-09-29T07:50:57.4855708Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-29T07:50:57.4856796Z with:
+2026-09-29T07:50:57.4861997Z   github-token: ***
+2026-09-29T07:50:57.4866049Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'restore_aic_usage_cache_fallback.cjs'));
+await main();
+
+2026-09-29T07:50:57.4869009Z   debug: false
+2026-09-29T07:50:57.4869509Z   user-agent: actions/github-script
+2026-09-29T07:50:57.4870111Z   result-encoding: json
+2026-09-29T07:50:57.4870615Z   retries: 0
+2026-09-29T07:50:57.4871146Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-29T07:50:57.4871844Z env:
+2026-09-29T07:50:57.4872306Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-29T07:50:57.4872890Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-29T07:50:57.4874419Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Daily%20Digest,gh-aw.repository=Rodro-31/agentic-workflows-workshop,gh-aw.run.id=36539043031,github.run_id=36539043031,gh-aw.engine.id=copilot
+2026-09-29T07:50:57.4881387Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-29T07:50:57.4882259Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-29T07:50:57.4882938Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-29T07:50:57.4883523Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-29T07:50:57.4884106Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-29T07:50:57.4884743Z   GITHUB_AW_OTEL_TRACE_ID: c2b9da25dcee326cb2caf540f370cd71
+2026-09-29T07:50:57.4885519Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b6f4a0e6143575ee
+2026-09-29T07:50:57.4886203Z   GITHUB_AW_OTEL_JOB_START_MS: 1790668255653
+2026-09-29T07:50:57.4887200Z   GH_AW_RESTORE_DAILY_AIC_CACHE_HIT: 
+2026-09-29T07:50:57.4888000Z   GH_AW_RESTORE_DAILY_AIC_CACHE_MATCHED_KEY: 
+2026-09-29T07:50:57.4893209Z ##[endgroup]
+2026-09-29T07:50:58.2490180Z [daily-aic-cache-fallback] Searching for aic-usage-cache artifact from recent runs: {"workflowId":369906614,"currentRunId":36539043031,"maxRunsToSearch":30}
+2026-09-29T07:50:58.5641440Z [daily-aic-cache-fallback] No aic-usage-cache artifact found in recent runs; proceeding without cache: {"runsSearched":0}

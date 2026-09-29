@@ -1,4 +1,9 @@
 ---
+# workflow engine
+engine:
+  id: copilot
+  model: gpt-5-mini
+
 # Trigger - when should this workflow run?
 on:
   schedule: daily on weekdays

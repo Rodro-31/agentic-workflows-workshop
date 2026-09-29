@@ -1,0 +1,33 @@
+{
+  "engine_id": "copilot",
+  "engine_name": "GitHub Copilot CLI",
+  "model": "auto",
+  "version": "1.0.80",
+  "agent_version": "1.0.80",
+  "workflow_name": "Daily Digest",
+  "experimental": false,
+  "supports_tools_allowlist": true,
+  "cache_memory": false,
+  "run_id": 36539043031,
+  "run_number": 1,
+  "run_attempt": "1",
+  "repository": "Rodro-31/agentic-workflows-workshop",
+  "ref": "refs/heads/main",
+  "sha": "384fea7064a6f61c6723073b03d1627431201671",
+  "actor": "Rodro-31",
+  "event_name": "workflow_dispatch",
+  "target_repo": "",
+  "staged": false,
+  "allowed_domains": [
+    "defaults"
+  ],
+  "firewall_enabled": true,
+  "awf_version": "v0.28.14",
+  "awmg_version": "",
+  "agent_runtime": "",
+  "steps": {
+    "firewall": "squid"
+  },
+  "created_at": "2026-09-29T07:50:56.400Z",
+  "cli_version": "v0.88.7"
+}

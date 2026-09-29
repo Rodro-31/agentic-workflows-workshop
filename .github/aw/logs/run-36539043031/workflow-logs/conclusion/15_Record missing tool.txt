@@ -1,0 +1,32 @@
+﻿2026-09-29T07:51:20.7779398Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-29T07:51:20.7781172Z with:
+2026-09-29T07:51:20.7787201Z   github-token: ***
+2026-09-29T07:51:20.7790341Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'missing_tool.cjs'));
+await main();
+
+2026-09-29T07:51:20.7793918Z   debug: false
+2026-09-29T07:51:20.7801562Z   user-agent: actions/github-script
+2026-09-29T07:51:20.7802589Z   result-encoding: json
+2026-09-29T07:51:20.7803410Z   retries: 0
+2026-09-29T07:51:20.7807501Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-29T07:51:20.7811291Z env:
+2026-09-29T07:51:20.7812367Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-29T07:51:20.7816812Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-29T07:51:20.7821739Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Daily%20Digest,gh-aw.repository=Rodro-31/agentic-workflows-workshop,gh-aw.run.id=36539043031,github.run_id=36539043031,gh-aw.engine.id=copilot
+2026-09-29T07:51:20.7825809Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-29T07:51:20.7828731Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-29T07:51:20.7829829Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-29T07:51:20.7832346Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-29T07:51:20.7833475Z   GITHUB_AW_OTEL_TRACE_ID: c2b9da25dcee326cb2caf540f370cd71
+2026-09-29T07:51:20.7836401Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fa9c6e6ed964749
+2026-09-29T07:51:20.7837593Z   GITHUB_AW_OTEL_JOB_START_MS: 1790668273550
+2026-09-29T07:51:20.7840151Z   GH_AW_AGENT_OUTPUT: 
+2026-09-29T07:51:20.7841129Z   GH_AW_MISSING_TOOL_CREATE_ISSUE: true
+2026-09-29T07:51:20.7842118Z   GH_AW_WORKFLOW_NAME: Daily Digest
+2026-09-29T07:51:20.7845479Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/Rodro-31/agentic-workflows-workshop/blob/main/.github/workflows/daily-digest.md
+2026-09-29T07:51:20.7849071Z ##[endgroup]
+2026-09-29T07:51:20.9940252Z Max count: unlimited

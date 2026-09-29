@@ -1,0 +1,25 @@
+﻿2026-09-29T07:51:14.5800090Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-09-29T07:51:14.5800944Z with:
+2026-09-29T07:51:14.5801345Z   name: detection
+2026-09-29T07:51:14.5801810Z   path: /tmp/gh-aw/threat-detection/
+2026-09-29T07:51:14.5802728Z   merge-multiple: false
+2026-09-29T07:51:14.5803281Z   repository: Rodro-31/agentic-workflows-workshop
+2026-09-29T07:51:14.5803883Z   run-id: 36539043031
+2026-09-29T07:51:14.5804351Z   skip-decompress: false
+2026-09-29T07:51:14.5804832Z   digest-mismatch: error
+2026-09-29T07:51:14.5805503Z env:
+2026-09-29T07:51:14.5805919Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-29T07:51:14.5806813Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-29T07:51:14.5808257Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Daily%20Digest,gh-aw.repository=Rodro-31/agentic-workflows-workshop,gh-aw.run.id=36539043031,github.run_id=36539043031,gh-aw.engine.id=copilot
+2026-09-29T07:51:14.5809693Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-29T07:51:14.5810247Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-29T07:51:14.5810875Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-29T07:51:14.5811376Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-29T07:51:14.5811959Z   GITHUB_AW_OTEL_TRACE_ID: c2b9da25dcee326cb2caf540f370cd71
+2026-09-29T07:51:14.5812660Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fa9c6e6ed964749
+2026-09-29T07:51:14.5813281Z   GITHUB_AW_OTEL_JOB_START_MS: 1790668273550
+2026-09-29T07:51:14.5813825Z ##[endgroup]
+2026-09-29T07:51:14.7832137Z Downloading single artifact
+2026-09-29T07:51:15.0376671Z ##[error]Unable to download artifact(s): Artifact not found for name: detection
+        Please ensure that your artifact is not expired and the artifact was uploaded using a compatible version of toolkit/upload-artifact.
+        For more information, visit the GitHub Artifacts FAQ: https://github.com/actions/toolkit/blob/main/packages/artifact/docs/faq.md

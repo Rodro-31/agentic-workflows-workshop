@@ -1,0 +1,47 @@
+﻿2026-09-29T07:51:15.6954790Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-29T07:51:15.6955679Z with:
+2026-09-29T07:51:15.6956456Z   name: usage
+2026-09-29T07:51:15.6959244Z   path: /tmp/gh-aw/usage/aw_info.json
+/tmp/gh-aw/usage/aw-info.jsonl
+/tmp/gh-aw/usage/agent_usage.json
+/tmp/gh-aw/usage/agent_usage.jsonl
+/tmp/gh-aw/usage/detection_usage.jsonl
+/tmp/gh-aw/usage/evals.jsonl
+/tmp/gh-aw/usage/graders/grader_manifest.json
+/tmp/gh-aw/usage/graders/grader_results.json
+/tmp/gh-aw/usage/github_rate_limits.jsonl
+/tmp/gh-aw/usage/agent/token_usage.jsonl
+/tmp/gh-aw/usage/detection/token_usage.jsonl
+/tmp/gh-aw/usage/activity/summary.json
+
+2026-09-29T07:51:15.6963386Z   if-no-files-found: ignore
+2026-09-29T07:51:15.6963918Z   compression-level: 6
+2026-09-29T07:51:15.6964369Z   overwrite: false
+2026-09-29T07:51:15.6964810Z   include-hidden-files: false
+2026-09-29T07:51:15.6965295Z   archive: true
+2026-09-29T07:51:15.6965707Z env:
+2026-09-29T07:51:15.6966323Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-29T07:51:15.6966911Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-29T07:51:15.6968328Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Daily%20Digest,gh-aw.repository=Rodro-31/agentic-workflows-workshop,gh-aw.run.id=36539043031,github.run_id=36539043031,gh-aw.engine.id=copilot
+2026-09-29T07:51:15.6970045Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-29T07:51:15.6970595Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-29T07:51:15.6971188Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-29T07:51:15.6971694Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-29T07:51:15.6972282Z   GITHUB_AW_OTEL_TRACE_ID: c2b9da25dcee326cb2caf540f370cd71
+2026-09-29T07:51:15.6972992Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fa9c6e6ed964749
+2026-09-29T07:51:15.6973604Z   GITHUB_AW_OTEL_JOB_START_MS: 1790668273550
+2026-09-29T07:51:15.6974138Z ##[endgroup]
+2026-09-29T07:51:15.9176438Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-09-29T07:51:15.9191806Z The least common ancestor is /tmp/gh-aw/usage. This will be the root directory of the artifact
+2026-09-29T07:51:15.9192814Z With the provided path, there will be 3 files uploaded
+2026-09-29T07:51:15.9199304Z Artifact name is valid!
+2026-09-29T07:51:15.9201775Z Root directory input is valid!
+2026-09-29T07:51:16.2450306Z Uploading artifact: usage.zip
+2026-09-29T07:51:16.2518444Z Beginning upload of artifact content to blob storage
+2026-09-29T07:51:16.6050108Z Uploaded bytes 585
+2026-09-29T07:51:16.6629409Z Finished uploading artifact content to blob storage!
+2026-09-29T07:51:17.0229406Z SHA256 digest of uploaded artifact is e496051ed5994b0dbffec52ac222cf33dd4c93afc5f0c3020f03a729f58cf74d
+2026-09-29T07:51:17.0230472Z Finalizing artifact upload
+2026-09-29T07:51:17.0235631Z Artifact usage successfully finalized. Artifact ID 11018924573
+2026-09-29T07:51:17.0239281Z Artifact usage has been successfully uploaded! Final size is 585 bytes. Artifact ID is 11018924573
+2026-09-29T07:51:17.0242614Z Artifact download URL: https://github.com/Rodro-31/agentic-workflows-workshop/actions/runs/36539043031/artifacts/11018924573
