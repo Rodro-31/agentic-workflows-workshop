@@ -48,3 +48,5 @@ target/
 
 # SQLite
 *.db
+
+.github/aw/logs/
