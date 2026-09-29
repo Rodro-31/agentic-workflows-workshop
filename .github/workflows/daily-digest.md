@@ -2,6 +2,7 @@
 # workflow engine
 engine:
   id: copilot
+  model: copilot/auto
 
 # Trigger - when should this workflow run?
 on:
