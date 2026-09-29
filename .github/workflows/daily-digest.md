@@ -2,7 +2,7 @@
 # workflow engine
 engine:
   id: copilot
-  model: copilot/auto
+  model: gpt-5.6-luna
 
 # Trigger - when should this workflow run?
 on:
